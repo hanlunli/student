@@ -1,14 +1,100 @@
-<header class="site-header">
 
+<style>
+    .site-header {
+    font-family: monospace;
+    font-size: 15px;
+    
+    position: absolute;
+    transition: top 0.2s ease-in-out;
+    margin-top: 25px;
+    padding-top: 10px;
+    left: -115px;
+    margin-top: 275px;
+  }
+.circular_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  position:absolute;
+
+  /* commented for demo
+  float: left;
+  margin-left: 125px;
+  margin-top: 20px;
+  */
+  
+  /*for demo*/
+  display:inline-block;
+  vertical-align:middle;
+}
+img{
+    position:relative;
+    border: 3px solid;
+    border-color: #7289da;
+  }
+
+.pfp {
+  border-radius: 50%;
+  position:absolute;
+  left: -80px;
+}
+.headerbutton {
+  border: 2px solid #121212;
+  background:  #7289da;
+  color: white;
+  width: 270px;
+  padding: 15px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  font-family: serif;
+}
+.headerbutton:hover{
+  background: #424549;
+  /* color: rgb(78, 3, 66); */
+}
+.backgroundbutton {
+    border: 2px solid #121212;
+    background:  #7289da;
+    color: white;
+    width: 100px;
+    /* padding: 15px 20px; */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    font-family: serif;
+  }
+  .backgroundbutton:hover{
+    background: #424549;
+    /* color: rgb(78, 3, 66); */
+  }
+
+</style>
+
+<img src="{{site.baseurl}}/images/mypfp.png" alt='me' class="pfp">
+<header class="site-header">
   <div id="header">
     <nav>
       <ul>
-        <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csse">CSSE</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csp">CSP</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csa">CSA</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
-        <li class="title"><a href="{{ site.github.repository_url }}#readme">View On GitHub</a></li>
+        <br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/utils';">Utils</button> <br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/';">Home</button> <br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/csse';">CSSE</button><br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/csp';">CSP</button><br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/csa';">CSA</button><br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/blogs';">Blogs</button><br \>
+        <button type="button" class="headerbutton" onclick="window.location.href='{{ site.github.repository_url }}#readme';">View On Github</button>
+
       </ul>
     </nav>
   </div><!-- end header -->
