@@ -5,34 +5,48 @@ title: Student Blog
 
 <style>
   body {
-      background-color: rgb(2, 10, 0);
-      color: #7289da;
-      animation: fadeInAnimation ease 3s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-  }
-
-  h1 {
-    position: relative;
+    padding: 25px;
+    background-color: #121212;
     color: #7289da;
-    font-size: 3rem;
-    font-family: sans-serif;
+    font-size: 25px;
   }
-    h2 {
-    position: relative;
-    color: #7289da;
-    font-family: sans-serif;
+  hr{background-color: #7289da;}
+  .dark-mode {
+    background-color: white;
+    color: black;
   }
+  .bar-dark{background-color: black}
   
+  .border-dark {
+    border: 2px solid black;
+  }
 </style>
+
+
 <script>
 var IsLoggedIn1 = "true";
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  var elem = document.getElementById("border");
+  elem.classList.toggle("border-dark");
+  var bars = document.getElementById("bar");
+  bars.classList.toggle("bar-dark");
+  console.log(bars)
+  // Append the style element to the document's head
+}
 </script>
-<button type="button" class="backgroundbutton" onclick="document.body.style.backgroundColor = 'rgb(204, 245, 193)'">light mode</button>
-<button type="button" class="backgroundbutton" onclick="document.body.style.backgroundColor = 'rgb(2, 10, 0)'">dark mode</button>
-<h1>Games</h1>
+<button class="backgroundbutton" onclick="myFunction()" style="font-size:11px;font-weight:normal;">Toggle dark mode</button>
+<img id="border" src="{{site.baseurl}}/images/mypfp.png">
+<p style="font-size:36px;font-weight:bold;"> Games </p>
 
-<h2>Calculator</h2>
+
+<hr id="bar">
+<hr id="bar">
+
+<hr id="bar">
+
+<p style="font-size:24px;font-weight:bold;"> Calculator </p>
 
 <div id="calculator">
 <div style="max-width: 200px; background-color: #424549; padding: 10px;">
@@ -57,7 +71,6 @@ var IsLoggedIn1 = "true";
   <button onclick="appendToDisplay('9')">9</button>
   <br />
   <button onclick="appendToDisplay('0')">0</button>
-
 </div>
 
 <script>
@@ -79,10 +92,9 @@ var IsLoggedIn1 = "true";
     display.value = '';
   }
 </script>
-
-<head>
   <br />
-  <h2>Tic Tac Toe</h2>
+  <hr id="bar">
+  <p style="font-size:24px;font-weight:bold;"> Tic Tac Toe </p>  
   <style>
     .board {
       display: grid;
@@ -100,8 +112,8 @@ var IsLoggedIn1 = "true";
       cursor: pointer;
     }
   </style>
-</head>
-<body>
+
+
   <div class="board" id="board">
     <div class="cell"></div>
     <div class="cell"></div>
@@ -152,4 +164,3 @@ var IsLoggedIn1 = "true";
       }
     }
   </script>
-</body>
