@@ -8,45 +8,83 @@ title: Hanlun's Blog
   .color{color:#7289da;}
   body {
     padding: 25px;
-    background-color: #121212;
+    background-color: #282b30;
     color: #7289da;
     font-size: 16px;
+    transition-duration: 0.2s;
   }
-
+  hr{background-color: #7289da;}
   .dark-mode {
     background-color: white;
     color: black;
+    transition-duration: 0.2s;
   }
+  .bar-dark{background-color: black}
   
+  .border-dark {
+    border: 2px solid black;
+  }
+  .cells-dark {
+    width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 2px;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #7289da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
 </style>
 
+
 <script>
+  
 var IsLoggedIn1 = "true";
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
-  var styleElement = document.createElement("style");
-
-  // Set the style content
-  // Append the style element to the document's head
-  document.head.appendChild(styleElement);
+  var elem = document.querySelectorAll("#border");
+  elem.forEach(function(border) {
+    border.classList.toggle("border-dark");
+    });
+  var bars = document.querySelectorAll("#bar");
+  bars.forEach(function(bar) {
+    bar.classList.toggle("bar-dark");
+    });
+  var cellz = document.querySelectorAll("#cells");
+  cellz.forEach(function(cells) {
+    cells.classList.toggle("cell");
+    cells.classList.toggle("cells-dark");
+    });
 }
 </script>
 
-<button class="backgroundbutton" onclick="myFunction()" style="font-size:11px;font-weight:normal;">Toggle dark mode</button>
 
 <p style="font-size:40px;font-weight:bold;"> Hanlun's Blog </p>
-<hr>
+<hr id="bar">
 
-Hello, this is my freeform picture, containing some details about my life.
-<br />
-<br />
-![freeform]({{site.baseurl}}/images/freeform.png)
-<hr>
+<p>This is my freeform picture, containing details on my life:</p>
+
+<img id="border" src = "{{site.baseurl}}/images/freeform.png">
+<hr id="bar">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tdCN5ZP8Kfs?si=9odSQ-QoAPcgwqNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br />
-
 
 <!-- | Period   | Class   |
 | -------- | ------- |
