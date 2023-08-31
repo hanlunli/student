@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Student Blog
+permalink: /frontend/utils
 ---
 
 <style>

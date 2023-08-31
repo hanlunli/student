@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Hanlun's Blog
-permalink: /frontend/utils
 ---
 <style> body { background-color: #121212; color: #7e92d6; } 
   p{font-family: sans-serif;}
