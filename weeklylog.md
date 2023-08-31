@@ -46,20 +46,20 @@ title: Hanlun's Weekly Log
 	</tr>
 	<tr>
 		<td>0</td>
-		<td><a href="{{site.baseurl}}/plans/Week1Plan" style="color: white;">- Tools Setup</a></td>
+		<td><a href="{{site.baseurl}}/frontend/Week0Plan" style="color: white;">- Week 0 Doc</a></td>
         <td>- Vscode, Python, Jupyter <br>- Linux Shell and Bash <br>- Collegeboard Pseudo Code</td> 
         <td></td>
 	</tr>
 	<tr>
 		<td>1</td>
-		<td><a href="{{site.baseurl}}/plans/Week1Plan" style="color: white;">- Github Page</a></td>
-        <td>- Calculator <br>- TicTacToe <br>- Quiz</td> 
+		<td><a href="{{site.baseurl}}/frontend/Week1Plan" style="color: white;">- Week 1 Doc</a></td>
+        <td><a href="utils.md">- Calculator</a> <br><a href="{{site.baseurl}}/util.md">- TicTacToe </a> <br><a href="{{site.baseurl}}/frontend/python_quiz">- Quiz</a></td> 
         <td></td>
 	</tr>
     <tr>
 		<td>2</td>
-		<td><a href="{{site.baseurl}}/plans/Week1Plan" style="color: white;">- Github Page</a></td>
-        <td><a href="{{site.baseurl}}/frontend/snake" style="color: white;">- Snake</a></td>
+		<td><a href="{{site.baseurl}}/frontend/Week2Plan" style="color: white;">- Week 2 Doc</a></td>
+        <td><a href="{{site.baseurl}}/frontend/snake" style="color: white;">- Snake</a><br><a href="{{site.baseurl}}/frontend/webscraping_with_python_emojis" style="color: white;">- Emojis</a></td>
         <td></td>
 	</tr>
 </table>
