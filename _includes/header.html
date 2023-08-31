@@ -41,8 +41,8 @@ img{
   left: -80px;
 }
 .headerbutton {
-  border: 2px solid #121212;
-  background:  #7289da;
+  border: 1px solid #5f73b8;
+  background: #424549;
   color: white;
   width: 270px;
   padding: 15px 20px;
@@ -56,7 +56,7 @@ img{
   font-family: serif;
 }
 .headerbutton:hover{
-  background: #424549;
+  background:  #7289da;
   /* color: rgb(78, 3, 66); */
 }
 .backgroundbutton {
@@ -98,6 +98,7 @@ img{
     transition-duration: 0.2s;
   }
   .bar-dark{background-color: black}
+  .table-dark{color: black}
   
   .border-dark {
     border: 2px solid black;
@@ -149,24 +150,28 @@ function myFunction() {
     cells.classList.toggle("cell");
     cells.classList.toggle("cells-dark");
     });
+  var tables = document.querySelectorAll("#table");
+  tables.forEach(function(table) {
+    // table.classList.toggle("myTable")
+    table.classList.toggle("table-dark");
+    });
 }
 </script>
+
 <img id="border" src="{{site.baseurl}}/images/mypfp.png" alt='me' class="pfp">
 <header class="site-header">
   <div id="header">
     <nav>
       <ul>
-        <button class="headerbutton" onclick="myFunction()" style="width:160px;padding: 5px 10px;font-weight:bold;left:23%;position:relative;">Dark Mode</button>  
-        <br \>
-        <br \>
+        <button id="border"class="headerbutton" onclick="myFunction()" style="width:160px;padding: 5px 10px;font-weight:bold;left:23%;position:relative;">Dark Mode</button>  
+        <br>
+        <br>
 
         <button id="border" type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/utils';">Utils</button> <br \>
-        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/';">Home</button> <br \>
-        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/csse';">CSSE</button><br \>
-        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/csp';">CSP</button><br \>
-        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/csa';">CSA</button><br \>
-        <button type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/blogs';">Blogs</button><br \>
-        <button type="button" class="headerbutton" onclick="window.location.href='{{ site.github.repository_url }}#readme';">View On Github</button>
+        <button id="border"type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/';">Home</button> <br \>
+        <button id="border"type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/blogs';">Blogs</button><br \>
+        <button id="border"type="button" class="headerbutton" onclick="window.location.href='{{site.baseurl}}/weeklylog';">Weekly Log</button><br \>
+        <button id="border"type="button" class="headerbutton" onclick="window.location.href='{{ site.github.repository_url }}#readme';">View On Github</button>
       </ul>
     </nav>
   </div><!-- end header -->
