@@ -14,26 +14,6 @@ title: Hanlun's Blog
     transition-duration: 0.2s;
   }
   hr{background-color: #7289da;}
-  .dark-mode {
-    background-color: white;
-    color: black;
-    transition-duration: 0.2s;
-  }
-  .bar-dark{background-color: black}
-  
-  .border-dark {
-    border: 2px solid black;
-  }
-  .cells-dark {
-    width: 100px;
-      height: 100px;
-      border: 1px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      cursor: pointer;
-  }
   .board {
       display: grid;
       grid-template-columns: repeat(3, 100px);
