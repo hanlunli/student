@@ -37,7 +37,7 @@ title: Hanlun's Weekly Log
 
 <body>
 
-<table class="myTable" id="table">
+<table class="myTable" id="table" style="color: white;">
 	<tr>
 		<th>Week</th>
 		<th>Plans</th>
