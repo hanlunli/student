@@ -8,11 +8,11 @@ permalink: /frontend/utils
   body {
     padding: 25px;
     background-color: #282b30;
-    color: #7289da;
+    color: #7e92d6;
     font-size: 25px;
     transition-duration: 0.2s;
   }
-  hr{background-color: #7289da;}
+  hr{background-color: #7e92d6;}
   .board {
       display: grid;
       grid-template-columns: repeat(3, 100px);
@@ -21,7 +21,7 @@ permalink: /frontend/utils
     .cell {
       width: 100px;
       height: 100px;
-      border: 1px solid #7289da;
+      border: 1px solid #7e92d6;
       display: flex;
       align-items: center;
       justify-content: center;

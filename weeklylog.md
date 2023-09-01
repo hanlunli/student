@@ -4,8 +4,8 @@ title: Hanlun's Weekly Log
 ---
 <style> body { background-color: #121212; color: #7e92d6; } 
   p{font-family: sans-serif;}
-  hr{background-color: #7289da;}
-  .color{color:#7289da;}
+  hr{background-color: #7e92d6;}
+  .color{color:#7e92d6;}
   body {
     padding: 25px;
     background-color: #282b30;
@@ -13,7 +13,7 @@ title: Hanlun's Weekly Log
     font-size: 16px;
     transition-duration: 0.2s;
   }
-  /* th{color: #7289da;} */
+  /* th{color: #7e92d6;} */
 </style>
 
 <style>
@@ -24,7 +24,7 @@ title: Hanlun's Weekly Log
   border-collapse: collapse; 
   }
 .myTable th { 
-  background-color: #7289da;
+  background-color: #7e92d6;
   color: white; 
   }
 .myTable td, 

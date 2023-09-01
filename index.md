@@ -2,18 +2,18 @@
 layout: default
 title: Hanlun's Blog
 ---
-<style> body { background-color: #121212; color: #7e92d6; } 
+<style>
   p{font-family: sans-serif;}
-  hr{background-color: #7289da;}
-  .color{color:#7289da;}
+  hr{background-color: #7e92d6;}
+  .color{color:#7e92d6;}
   body {
     padding: 25px;
     background-color: #282b30;
-    color: #7289da;
+    color: #60B5CC;
     font-size: 16px;
     transition-duration: 0.2s;
   }
-  hr{background-color: #7289da;}
+  hr{background-color: #7e92d6;}
   .board {
       display: grid;
       grid-template-columns: repeat(3, 100px);
@@ -22,7 +22,7 @@ title: Hanlun's Blog
     .cell {
       width: 100px;
       height: 100px;
-      border: 1px solid #7289da;
+      border: 1px solid #7e92d6;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -57,7 +57,6 @@ function myFunction() {
 
 <p style="font-size:40px;font-weight:bold;"> Hanlun's Blog </p>
 <hr id="bar">
-
 <p>This is my freeform picture, containing details on my life:</p>
 
 <img id="border" src = "{{site.baseurl}}/images/freeform.png">

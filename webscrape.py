@@ -26,13 +26,29 @@ spans = s.find_all('span', class_="greyText smallText uitext")
 digits_as_strings = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 ratings=[]
+numratings = []
 for i in spans:
+    temp =''
     rating = i.get_text()
     if rating[2] in digits_as_strings:
         ratings.append(float(rating[2:6].strip()))
+        # print(rating[19::])
+        # print(rating[25::])
+        for j in rating[7::].strip():
+            # print(j)
+            if j in digits_as_strings:
+                temp += j
+        # print(temp)
+        numratings.append(temp)
     elif rating[17] in digits_as_strings:
         ratings.append(float(rating[17:21].strip()))
-
+        for j in rating[22::].strip(): 
+            if str(j) in digits_as_strings:
+                temp += j
+            # print(temp)
+        numratings.append(temp)
+print(len(ratings)-len(numratings))
+print(numratings)
 for i in range(len(ratings)):
     emoji = ""
     if ratings[i] >= 4:
@@ -41,4 +57,4 @@ for i in range(len(ratings)):
         emoji += '👍'
     else:
         emoji += '👎'
-    print(titles[i], "by: ", authorname[i], "with a rating of: ", ratings[i], emoji)
+    print(titles[i], "by: ", authorname[i], "with a rating of: ", ratings[i], emoji, "with", numratings[i], "ratings")
