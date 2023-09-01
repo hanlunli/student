@@ -9,7 +9,7 @@ title: Hanlun's Blog
   body {
     padding: 25px;
     background-color: #282b30;
-    color: #60B5CC;
+    color: #7e92d6;
     font-size: 16px;
     transition-duration: 0.2s;
   }
