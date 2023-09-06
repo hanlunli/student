@@ -62,6 +62,12 @@ title: Hanlun's Weekly Log
         <td><a href="{{site.baseurl}}/frontend/snake" style="color: white;">- Snake</a><br><a href="{{site.baseurl}}/frontend/webscraping_with_python_emojis" style="color: white;">- Emojis</a><br><a href="{{site.baseurl}}/frontend/jquery" style="color: white;">- JQuery</a></td>
         <td></td>
 	</tr>
+  <tr>
+		<td>2</td>
+		<td><a href="{{site.baseurl}}/frontend/Week3Plan" style="color: white;">- Week 3 Doc</a></td>
+        <td><a href="{{site.baseurl}}/frontend/jquery" style="color: white;">- JS Input (not real btw)</a></td>
+        <td></td>
+	</tr>
 </table>
 
 <!-- | Week     | Code Things   |
