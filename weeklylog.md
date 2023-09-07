@@ -65,7 +65,7 @@ title: Hanlun's Weekly Log
   <tr>
 		<td>2</td>
 		<td><a href="{{site.baseurl}}/frontend/Week3Plan" style="color: white;">- Week 3 Doc</a></td>
-        <td><a href="{{site.baseurl}}/frontend/jquery" style="color: white;">- JS Input (not real btw)</a></td>
+        <td><a href="{{site.baseurl}}/frontend/pokemon" style="color: white;">- Python Pokemon Pain</a><br><a href="{{site.baseurl}}/frontend/weather" style="color: white;">- Weather</a><br><a href="{{site.baseurl}}/frontend/bash" style="color: white;">- Bash Script</a></td>
         <td></td>
 	</tr>
 </table>
