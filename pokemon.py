@@ -153,9 +153,11 @@ def runpokemon(p1,p2):
 
 
 print(f"{yellow}Pikachu: Electric")
+print(f"{pokemon1['ascii_art']}")
 print(f"{red}Charmander: Fire{white}")
+print(f"{pokemon2['ascii_art']}")
 char=input("Which Pokemon do you wish to select: ")
-
+clear()
 if char == "Pikachu":
   runpokemon(pokemon1,pokemon2)
 else:
