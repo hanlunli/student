@@ -68,6 +68,12 @@ title: Hanlun's Weekly Log
         <td><a href="{{site.baseurl}}/frontend/pokemon" style="color: white;">- Python Pokemon Pain</a><br><a href="{{site.baseurl}}/frontend/weather" style="color: white;">- Weather</a><br><a href="{{site.baseurl}}/frontend/bash" style="color: white;">- Bash Script</a></td>
         <td></td>
 	</tr>
+  <tr>
+		<td>3</td>
+		<td><a href="{{site.baseurl}}/frontend/Week4Plan" style="color: white;">- Week 4 Doc</a></td>
+        <td><a href="{{site.baseurl}}/frontend/lists" style="color: white;">- Data Types, Lists, Dictionaries</a></td>
+        <td></td>
+	</tr>
 </table>
 
 <!-- | Week     | Code Things   |
