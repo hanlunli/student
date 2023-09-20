@@ -16,13 +16,17 @@ def get_data():
     global test_data
     global rand
     global start
+
     dictionary = open("words.txt", "r")
     temp = dictionary.readlines()
     dictionary.close()
     listwords = []
+
     for i in temp:
         listwords.append(i.strip())
+
     start = time.perf_counter()
+
     test_data = []
     usedlist = []
     while True:
@@ -35,6 +39,7 @@ def get_data():
             break
     rand = random.randint(0,len(test_data)-1)
     temp3 = ''
+
     for i in test_data:
         temp3 += i + ' '
     return (temp3+render_template('wtf.md'))
@@ -89,20 +94,29 @@ def inputdata():
     word = words
     words = words.split();
     data = test_data;
-    all = min(len(words), len(data))
     untotal = 0
 
-    for i in words:
-        if i not in data:
-            untotal += 1
-    print(untotal)
+    all = 0;
+    if(len(data) > len(words)):
+        for i in range(len(words)):
+            if data[i] == words[i]:
+                total+=1;
+            all += 1;
+    else:
+        for i in range(len(data)):
+            if data[i] == words[i]:
+                total+=1;
+            all += 1;
 
     total = all - untotal
+
     print("WPM: " + str(total/(totalTime)*60));
+    
     try:
         print("Accuracy: " + str(total/all*100)+ "%")
     except:
         pass;
+    
     html_content += "<br> <br><br>"
     html_content+= "Accuracy: " + str((total/all*100)//1)+ "%" + '\n'
     html_content += "WPM: " + str((total/(totalTime)*60)//1) + '\n'
