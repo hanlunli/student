@@ -105,8 +105,7 @@ def inputdata():
                 total+=1;
             all += 1;
 
-    total = all - untotal #all is the number of total words, untotal is the number of incorrect words, total - incorrect = correct.
-
+    # total = all - untotal #all is the number of total words, untotal is the number of incorrect words, total - incorrect = correct.
 
     html_content += "<br> <br><br>"
     try:
