@@ -7,11 +7,9 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True, origins='*')  # Allow all origins (*)
 
 # ... your existing Flask
-test_data={}
-rand = 0
 # add an api endpoint to flask app
   
-@app.route('/api/data', methods=["GET"])
+@app.route('/wpmtest', methods=["GET"])
 def get_data():
     global test_data
     global rand
@@ -29,18 +27,19 @@ def get_data():
 
     test_data = []
     usedlist = []
-    while True:
+    while True: #iteration
         temp2 = random.randint(0, len(listwords))
         print(temp2)
-        if temp2 not in usedlist:
+        if temp2 not in usedlist: #usedlist is a list of the indexes of random words that we've already used
             usedlist.append(temp2)
-            test_data.append(listwords[temp2])
+            test_data.append(listwords[temp2]) #test_data is the final list of words that the user's input will be compared to
         if len(test_data) == 50:
             break
+        
     rand = random.randint(0,len(test_data)-1)
     temp3 = ''
 
-    for i in test_data:
+    for i in test_data: #iteration
         temp3 += i + ' '
     return (temp3+render_template('wtf.md'))
 
@@ -81,15 +80,13 @@ def inputdata():
     transition-duration: 0.2s;
    }
     </style>
-    <button id="border"type="button" class="headerbutton" onclick="window.location.href='/api/data';">Do the test again</button> <br \>  
+    <button id="border"type="button" class="headerbutton" onclick="window.location.href='/wpmtest';">Do the test again</button> <br \>  
     </body>
     </html>"""
     print(test_data[rand])
     words = request.form['a']
     end = time.perf_counter();
     totalTime = end - start;
-    print("Completed in " + str(totalTime) + " seconds");
-    print(words);
     total = 0;
     word = words
     words = words.split();
@@ -108,25 +105,21 @@ def inputdata():
                 total+=1;
             all += 1;
 
-    total = all - untotal
+    total = all - untotal #all is the number of total words, untotal is the number of incorrect words, total - incorrect = correct.
 
-    print("WPM: " + str(total/(totalTime)*60));
-    
+
+    html_content += "<br> <br><br>"
     try:
-        print("Accuracy: " + str(total/all*100)+ "%")
+        html_content+= "Accuracy: " + str((total/all*100)//1)+ "%" + '\n' #calculates wpm in % by dividing total words correct by all words inputted, then multiplying by 100
     except:
         pass;
     
-    html_content += "<br> <br><br>"
-    html_content+= "Accuracy: " + str((total/all*100)//1)+ "%" + '\n'
-    html_content += "WPM: " + str((total/(totalTime)*60)//1) + '\n'
+    html_content += "WPM: " + str((total/(totalTime)*60)//1) + '\n' #calculates wpm by dividing words correct by time it took to type the words
     return html_content
 
 
-# add an HTML endpoint to flask app
 @app.route('/')
 def say_hello():
     return render_template('main.md')
 if __name__ == '__main__':
-    # starts flask server on default port, http://127.0.0.1:5001
     app.run(port=5001)

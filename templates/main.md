@@ -35,6 +35,6 @@
     </style>
     <p>Click on button when you want to start the typing test</p>
         
-<button id="border"type="button" class="headerbutton" onclick="window.location.href='/api/data';">Start Typing Test</button> <br \>
+<button id="border"type="button" class="headerbutton" onclick="window.location.href='/wpmtest';">Start Typing Test</button> <br \>
 </body>
 </html>
