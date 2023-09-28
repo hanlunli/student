@@ -71,7 +71,9 @@ title: Hanlun's Weekly Log
   <tr>
 		<td>4</td>
 		<td><a href="{{site.baseurl}}/frontend/Week4Plan" style="color: white;">- Week 4 Doc</a></td>
-        <td><a href="{{site.baseurl}}/frontend/lists" style="color: white;">- Data Types, Lists, Dictionaries</a></td>
+        <td><a href="{{site.baseurl}}/frontend/lists" style="color: white;">- Data Types, Lists, Dictionaries</a>
+        <a href="{{site.baseurl}}/basics/home" style="color: white;">- Web Basics Home</a>
+        </td>
         <td></td>
 	</tr>
 </table>
