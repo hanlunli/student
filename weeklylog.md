@@ -76,6 +76,56 @@ title: Hanlun's Weekly Log
         </td>
         <td></td>
 	</tr>
+  <tr>
+		<td>5</td>
+		<td><a href="{{site.baseurl}}/frontend/Week5Plan" style="color: white;">- Week 5 Doc</a></td>
+        <td><p style="color: white;">- Starting on project</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>6</td>
+		<td><a href="{{site.baseurl}}/frontend/Week6Plan" style="color: white;">- Week 6 Doc</a></td>
+        <td><p style="color: white;">- Learn basics abt backend/frontend</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>7</td>
+		<td><a href="{{site.baseurl}}/frontend/Week7Plan" style="color: white;">- Week 7 Doc</a></td>
+        <td><p style="color: white;">- Start making backend</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>8</td>
+		<td><a href="{{site.baseurl}}/frontend/Week8Plan" style="color: white;">- Week 8 Doc</a></td>
+        <td><p style="color: white;">- Finished messaging code</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>9</td>
+		<td><a href="{{site.baseurl}}/frontend/Week9Plan" style="color: white;">- Week 9 Doc</a></td>
+        <td><p style="color: white;">- Make games</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>10</td>
+		<td><a href="{{site.baseurl}}/frontend/Week10Plan" style="color: white;">- Week 10 Doc</a></td>
+        <td><p style="color: white;">- Connect games to backend using lists and arrays yipiee</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>11</td>
+		<td><a href="{{site.baseurl}}/frontend/Week11Plan" style="color: white;">- Week 11 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+
 </table>
 
 <!-- | Week     | Code Things   |
