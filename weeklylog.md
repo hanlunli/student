@@ -125,6 +125,55 @@ title: Hanlun's Weekly Log
         </td>
         <td></td>
 	</tr>
+  <tr>
+		<td>12</td>
+		<td><a href="{{site.baseurl}}/frontend/Week11Plan" style="color: white;">- Week 12 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>13</td>
+		<td><a href="{{site.baseurl}}/frontend/Week11Plan" style="color: white;">- Week 13 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>14</td>
+		<td><a href="{{site.baseurl}}/frontend/Week11Plan" style="color: white;">- Week 14 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>15</td>
+		<td><a href="{{site.baseurl}}/frontend/Week11Plan" style="color: white;">- Week 15 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>16</td>
+		<td><a href="{{site.baseurl}}/frontend/Week11Plan" style="color: white;">- Week 16 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>17</td>
+		<td><a href="{{site.baseurl}}/frontend/Week17Plan" style="color: white;">- Week 17 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
+  <tr>
+		<td>18</td>
+		<td><a href="{{site.baseurl}}/frontend/Week18Plan" style="color: white;">- Week 18 Doc</a></td>
+        <td><p style="color: white;">- yay</p>
+        </td>
+        <td></td>
+	</tr>
 
 </table>
 
